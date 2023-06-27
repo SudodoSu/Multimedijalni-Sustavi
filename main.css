@@ -8,9 +8,9 @@
     --light_1: #48CAE4;
     --primary_blue: #00B4D8;
     --dark_1: #0096C7;
-    --dark_1: #0077B6;
-    --dark_1: #023E8A;
-    --dark_1: #03045E;
+    --dark_2: #0077B6;
+    --dark_3: #023E8A;
+    --dark_4: #03045E;
 }
 
 *,
@@ -158,6 +158,10 @@ nav {
     box-shadow: inset 0 0 10px 5px rgb(255, 255, 255, 0.6);
 }
 
+.current-nav-a-color.a-color-nav {
+    color: red;
+}
+
 /* MAIN */
 
 main {
@@ -173,6 +177,18 @@ main {
     padding: 2em;
     border-radius: .8em;
     max-width: 800px;
+    margin-bottom: 4rem;
+    margin-top: 1rem;
+}
+
+.download-button {
+    padding: .8em 1em;
+    background-color: var(--dark_4);
+    border-radius: 50px;
+    max-width: 10em;
+}
+.download-button a {
+    color: var(--light_4);
 }
 
 /* Section - table of contents */
@@ -182,15 +198,21 @@ main {
     grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
     gap: 1em;
     margin: 5rem 1rem;
+    margin-top: 2rem;
 }
 
 .card {
     display: grid;
     box-shadow: inset 0 0 10px 10px rgba(0, 0, 0, 0.5);
 }
+
 .table-of-contents > article > * {
     grid-column: 1/2;
     grid-row: 1/2;
+}
+
+.card-a-z {
+    z-index: 4;
 }
 
 .card-img {
@@ -212,6 +234,10 @@ main {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
+.card-clanak {
+    object-fit: scale-down;
+    transform: scale(0.8);
+}
 
 /* Project article */
 
@@ -247,7 +273,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
     min-height: 20rem;
-    background-color: var(--dark_1);
+    background-color: var(--dark_4);
     padding: 4em;
     gap: 2em;
 }
@@ -341,7 +367,37 @@ footer {
     color: var(--primary_blue);
 }
 
+/* Popup Images */
 
+.popup-images {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 11;
+    top: 0;
+    left: 0;
+    display: none;
+    place-items: center;
+}
+
+.popup-images .p-image {
+    width: 90%;
+    max-width: 700px;
+}
+
+.original-images {
+    cursor: pointer;
+}
+
+.x-popup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    font-weight: 900;
+    cursor: pointer;
+}
 
 @media (min-width: 900px) {
     /* HEADER */
@@ -362,8 +418,8 @@ nav {
 
 .navigation-div-image > img,
 .navigation-div-image {
-    width: 200px;
-    height: 5em;
+    width: 300px;
+    height: 6em;
 }
 
 .hamburger-navigation {
@@ -391,4 +447,24 @@ nav {
 .hamburger {
     display: none;
 }
+
+/* Card */
+
+.card:hover {
+    transform: scale(0.9) rotate(2deg);
+    border-radius: 10%;
+}
+
+.download-button {
+    font-size: 1em;
+}
+
+}
+
+@media (min-width: 1100px) {
+    /* Section */
+
+    .table-of-contents {
+        max-width: 1500px;
+    }
 }

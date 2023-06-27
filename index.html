@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="./assets/images/oko.png" type="image/x-icon">
-    <title>Home - AI Camera</title>
+    <title>Home - WatchTower</title>
 </head>
 <body>
     <header>
@@ -36,12 +36,12 @@
             </button>
             <div class="hamburger-navigation" data-visible="false">
                 <ul>
-                    <li><a href="index.html">početna</a></li>
-                    <li><a href="photoshop.html">photoshop</a></li>
-                    <li><a href="scribus.html">scribus</a></li>
-                    <li><a href="blender.html">blender</a></li>
-                    <li><a href="reaper.html">reaper</a></li>
-                    <li><a href="openshot.html">openshot</a></li>
+                    <li><a href="index.html" class="current-nav-a-color">početna</a></li>
+                    <li><a href="photoshop.html" class="current-nav-a-color">photoshop</a></li>
+                    <li><a href="scribus.html" class="current-nav-a-color">scribus</a></li>
+                    <li><a href="blender.html" class="current-nav-a-color">blender</a></li>
+                    <li><a href="reaper.html" class="current-nav-a-color">reaper</a></li>
+                    <li><a href="openshot.html" class="current-nav-a-color">openshot</a></li>
                 </ul>
             </div>
         </nav>
@@ -53,32 +53,37 @@
                 <hr>
                 <p>Ova stranica je rađena u sklopu kolegija Multimedijalni sustavi.
                     Zadatak je bio koristeći suvremene alate za izradu web stranice na
-                    kojoj će se prikazati neki zamišljeni proizvod, usluge, turističke destinacije, poduzeća te sadržavati sve od navedenih sadžaja text, slika, grafika, zvuk i video. 
+                    kojoj će se prikazati neki zamišljeni proizvod, usluge, turističke destinacije, 
+                    poduzeća te sadržavati sve od navedenih sadžaja text, slika, grafika, zvuk i video. 
                     Svaki od navedenih sadržaja/alata može se pronaći i zasebnim karticama 
-                    do kojih možete doći u gornjoj navigaciji.
+                    do kojih možete doći u gornjoj navigaciji ili donjim karticama.
                 </p>
             </article>
         </div>
         <section class="table-of-contents">
             <article class="photoshop-article-landing-page card">
-                <img src="./assets/images/logo.png" alt="Logo WatchTower" class="card-img card-logo-img">
-                <a href="#"><h2 class="card-title">Logo</h2></a>
+                <img 
+                src="./assets/images/logo.png" 
+                alt="Logo WatchTower" 
+                class="card-img card-logo-img" 
+                >
+                <a href="photoshop.html"><h2 class="card-title">Logo</h2></a>
             </article>
             <article class="scribus-article-landing-page card">
-                <img src="./assets/images/tisak-ad.png" alt="Tisak oglas clanak WatchTower" class="card-img card-clanak-img">
-                <a href="#"><h2 class="card-title">Članak</h2></a>
+                <img src="./assets/images/tisak-ad.png" alt="Tisak oglas clanak WatchTower" class="card-img card-clanak">
+                <a href="scribus.html" class="card-a-z"><h2 class="card-title">Članak</h2></a>
             </article>
-            <article class="blender-article-landing-page card">
-                <a href="#"><h2 class="card-title">Animacija</h2></a>
-                <video loop autoplay src="./assets/video/blender.mp4" alt="Animacija blender WatchTower" class="card-img">
+            <article class="blender-article-landing-page card card-js">
+                <a href="blender.html" class="card-a-z"><h2 class="card-title">Animacija</h2></a>
+                <video loop autoplay src="./assets/video/blender.mp4" alt="Animacija blender WatchTower" class="card-img card-img-js">
             </article>
-            <article class="reaper-article-landing-page card">
-                <img src="./assets/images/sound-waves.jpg" alt="Sound waves WatchTower" class="card-img">
-                <a href="#"><h2 class="card-title">Zvuk</h2></a>
+            <article class="reaper-article-landing-page card card-js">
+                <img src="./assets/images/sound-waves.jpg" alt="Sound waves WatchTower" class="card-img card-img-js">
+                <a href="reaper.html"><h2 class="card-title">Zvuk</h2></a>
             </article>
-            <article class="openshot-article-landing-page card">
-                <img src="./assets/images/cinema.jpg" alt="Cinema image WatchTower" class="card-img">
-                <a href="#"><h2 class="card-title">Video</h2></a>
+            <article class="openshot-article-landing-page card card-js">
+                <img src="./assets/images/cinema.jpg" alt="Cinema image WatchTower" class="card-img card-img-js">
+                <a href="openshot.html"><h2 class="card-title">Video</h2></a>
             </article>
         </section>
     </main>
