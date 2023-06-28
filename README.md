@@ -1,5 +1,8 @@
-# Multimedijalni-Sustavi
+# WatchTower
+
 WatchTower - AI security camera website
+
+Kolegij Multimedijalni-Sustavi
 
 [Link to Live Website](https://mateo-smoljan.vercel.app/)
 
